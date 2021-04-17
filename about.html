@@ -1,0 +1,47 @@
+---
+title: Om os
+call_to_action: Contact
+background_image_path:
+large_header: false
+show_in_navigation: true
+navigation_order: 1
+---
+
+<div class="editable">
+	<p>
+		Vi er et mindre software hus, som udvikler software produkter af høj kvalitet og varetager den daglige drift af produkterne i skyen.
+		Vores produkter udvikles med anvendelse af moderne teknologier og arkitekturprincipper for at sikre stabile og skalerbare løsninger med stor fokus på sikkerhed hele vejen fra produktets udformning til driftsmiljøet i skyen.
+	</p>
+	<p>
+		Vi udvikler primært generelt anvendelige produkter, som potentielt har flere kunder og dermed har en mere attraktiv pris end en kundespecifik løsning.
+		Vores produkter udvikles fra starten til at understøtte flere kunder i samme platform og sikrer at det kun er jer, der har adgang til jeres data.
+	</p>
+	<p>
+		Vi foretrækker at udvikle produkter i samarbejde med kunder og brugere af vores produkter med udgangspunkt i kundernes specifikke behov.
+		På baggrund af de specifikke behov designer og udvikler vi et generelt produkt som både dækker behovene og har en bredere målgruppe.
+		Vi indgår således gerne i et agilt samarbejde om et produkt, der dækker netop jeres behov.
+	</p>
+</div>
+
+<p class="editor-link"><a href="cloudcannon:collections/_staff_members" class="btn"><strong>&#9998;</strong> Update Staff Members</a></p>
+
+<ul class="staff-list">
+	{% for member in site.staff_members %}
+		<li class="staff">
+			<div class="staff-details">
+				<div class="staff-image">
+					<img src="{{ member.image }}" alt="Staff photo for {{ member.name }}" width="120" height="120">
+				</div>
+				<ul class="staff-info">
+					<li>{{ member.name }}</li>
+					<li><small>{{ member.credentials }}</small></li>
+					<li><a href="tel:{{ site.data.company.contact_phone_number }}">{{ site.data.company.contact_phone_number }}</a></li>
+				</ul>
+			</div>
+
+			<div class="staff-bio">
+				<p>{{ member.content | markdownify }}</p>
+			</div>
+		</li>
+	{% endfor %}
+</ul>
