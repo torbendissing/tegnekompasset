@@ -3,7 +3,7 @@
 Law firm themed business template for Jekyll. Browse through a [live demo](https://grey-grouse.cloudvent.net/).
 Increase the web presence of a law firm or business with this configurable theme.
 
-![Hagensen Software screenshot](images/_screenshot.png)
+![Tegnekompasset screenshot](images/_screenshot.png)
 
 Justice was made by [CloudCannon](https://cloudcannon.com/), the Cloud CMS for Jekyll.
 
