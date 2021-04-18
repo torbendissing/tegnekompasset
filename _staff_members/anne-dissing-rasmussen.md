@@ -5,4 +5,4 @@ credentials: Stifter og ejer
 phone_extension:
 ---
 
-Torben har mere end 10 års erfaring med facilitering af projekter og afholdese af kurser.
+Anne har mere end 10 års erfaring med facilitering af projekter og afholdelse af kurser.

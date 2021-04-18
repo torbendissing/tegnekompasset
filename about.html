@@ -1,15 +1,11 @@
----
-title: Om os
-call_to_action: Contact
-background_image_path:
-large_header: false
-show_in_navigation: true
-navigation_order: 1
----
+--- title: Om os call_to_action: Contact background_image_path: large_header: false show_in_navigation: true navigation_order:
+1 ---
 
 <div class="editable">
 	<p>Jeg hedder Anne Dissing Rasmussen, og det er mig, der st&aring;r med Tegnekompasset i h&aring;nden!</p>
-	<p>I mods&aelig;tning til mange andre stoppede jeg ikke med at tegne i 12-&aring;rs alderen. &Oslash;velse g&oslash;r mester, og jeg nyder i dag at kombinere tegning med min interesse for meningsfulde processer. Jeg har altid en tusch i n&aelig;rheden, og bruger den flittigt til m&oslash;der, i undervisning og til procesledelse.</p>
+	<p>I mods&aelig;tning til mange andre stoppede jeg ikke med at tegne i 12-&aring;rs alderen. &Oslash;velse g&oslash;r mester,
+		og jeg nyder i dag at kombinere tegning med min interesse for meningsfulde processer. Jeg har altid en tusch i n&aelig;rheden,
+		og bruger den flittigt til m&oslash;der, i undervisning og til procesledelse.</p>
 	<p>Min professionelle erfaring:</p>
 	<ul>
 		<li>15+ &aring;rs erfaring som kommunal udviklingskonsulent</li>
@@ -29,21 +25,21 @@ navigation_order: 1
 
 <ul class="staff-list">
 	{% for member in site.staff_members %}
-		<li class="staff">
-			<div class="staff-details">
-				<div class="staff-image">
-					<img src="{{ member.image }}" alt="Staff photo for {{ member.name }}" width="120" height="120">
-				</div>
-				<ul class="staff-info">
-					<li>{{ member.name }}</li>
-					<li><small>{{ member.credentials }}</small></li>
-					<li><a href="tel:{{ site.data.company.contact_phone_number }}">{{ site.data.company.contact_phone_number }}</a></li>
-				</ul>
+	<li class="staff">
+		<div class="staff-details">
+			<div class="staff-image">
+				<img src="{{ member.image }}" alt="Staff photo for {{ member.name }}" width="120" height="120">
 			</div>
+			<ul class="staff-info">
+				<li>{{ member.name }}</li>
+				<li><small>{{ member.credentials }}</small></li>
+				<li><a href="tel:{{ site.data.company.contact_phone_number }}">{{ site.data.company.contact_phone_number }}</a></li>
+			</ul>
+		</div>
 
-			<div class="staff-bio">
-				<p>{{ member.content | markdownify }}</p>
-			</div>
-		</li>
+		<div class="staff-bio">
+			<p>{{ member.content | markdownify }}</p>
+		</div>
+	</li>
 	{% endfor %}
 </ul>
