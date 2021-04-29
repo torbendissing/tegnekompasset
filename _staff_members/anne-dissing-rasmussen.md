@@ -1,6 +1,6 @@
 ---
 name: Anne Dissing Rasmussen
-image: "/uploads/ADR.png"
+image: "/uploads/portrait.png"
 credentials: Stifter og ejer
 phone_extension:
 ---
