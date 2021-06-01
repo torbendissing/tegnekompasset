@@ -50,10 +50,18 @@
 			<section class="map-section">
 				<div id="map"></div>
 			</section>
-		{% elsif page.call_to_action == 'Contact' %}
+			{% elsif page.call_to_action == 'Contact' %}
 			<section class="quote-section">
 				<p class="container editable">
 					<a href="{{ site.baseurl }}/contact/">Kontakt os</a> for en uformel snak om hvordan vi kan hjælpe jer med jeres behov og ønsker.
+				</p>
+			</section>
+			{% elsif page.call_to_action == 'Cooperation' %}
+			<section class="quote-section">
+				<p class="container editable">
+					Tegnekompasset samarbejder med <a href="Naturfagskonsulenten.dk">Naturfagskonsulenten.dk</a>.
+					<br />
+					Naturfagskonsulenten tilbyder kurser og sparring indenfor naturfagsundervisning. Hos Naturfagskonsulenten møder du Ulla Hjøllund Linderoth. Hun er uddannet biologi og har undervist i gymnasiet (har pædagogikum) og været lektor på læreruddannelsen i Silkeborg, hvor hun har i 12 år undervist i biologi, natur/teknologi og i specialiseringsmodulet naturfag på tværs. Sideløbende har hun i 4 år været ansat på AQUA Naturfagscenter som skolekonsulent i Silkeborg Kommune, hvor hun lavede efteruddannelse for lærere og underviste børn og unge i naturen. Ulla er formand for Undervisningsministeriets opgavekommission i naturfag, hvor hun bl.a. laver digitale selvrettende prøver i biologi til FSA.
 				</p>
 			</section>
 		{% else %}
