@@ -26,6 +26,12 @@ map:
 		<label>Email adresse</label>
 		<p class="contact-info"><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
 
+		<label>Facebook</label>
+		<p class="contact-info"><a href="{{ site.data.company.contact_facebook }}">{{ site.data.company.contact_facebook }}</a></p>
+
+		<label>Linkedin</label>
+		<p class="contact-info"><a href="{{ site.data.company.contact_linkedin }}">{{ site.data.company.contact_linkedin }}</a></p>
+
 		<label>Adresse</label>
 		<address class="contact-info">{{ site.data.company.address | replace: ',', '<br>' }}<br>{{ site.data.company.postal_address | replace: ',', '<br>' }}</address>
 	</div>
