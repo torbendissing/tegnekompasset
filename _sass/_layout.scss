@@ -28,7 +28,7 @@ header {
 	}
 
 	@media (min-width: $mobile-break) {
-		background-size: contain;
+		background-size: 100px;
 		background-position: calc(50% - 300px) calc(100% + 20px);
 
 		&.main-hero {
