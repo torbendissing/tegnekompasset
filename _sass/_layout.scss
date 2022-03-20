@@ -17,7 +17,7 @@ body {
 }
 
 header {
-	background-size: 100px 100px;
+	background-size: 400px 100px;
 	background-repeat: no-repeat;
 	background-position: 5px 5px;
 	height: 220px;
@@ -28,7 +28,7 @@ header {
 	}
 
 	@media (min-width: $mobile-break) {
-		background-size: 100px 100px;
+		background-size: 400px 100px;
 		background-position: 5px 5px;
 
 		&.main-hero {
